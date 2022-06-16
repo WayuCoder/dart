@@ -1,12 +1,19 @@
- //while loops in dart
+ // guessing game using dart
 import 'dart:io';
+
+String prompt(String promptText)
+{
+  print(promptText);
+  String input = stdin.readLineSync()!;
+  return input;
+}
 
 void main()
 {
-  int i = 0;
-  while(i < 5)
-  {
-    print(i);
-    i++;
-  }
+List<String> brotherList = ['Beka','Kiya','Halanu'];
+
+ for(String brother in brotherList)
+ {
+   print(brother);
+ }
 }
